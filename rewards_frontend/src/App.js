@@ -46,6 +46,7 @@ function AppLayout() {
       </nav>
 
       <Routes>
+        <Route path="/" element={user?.token ? <Navigate to="/rewards" /> : <Navigate to="/login" />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/rewards" element={user?.token ? <Rewards /> : <Navigate to="/login" />} />

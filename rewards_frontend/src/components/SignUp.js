@@ -22,6 +22,7 @@ function SignUp() {
       login(userEmail, token, user_id);
   
       navigate('/rewards');
+      window.location.reload();
     } catch (err) {
       setError("Error creating account. Please try again.");
     }
