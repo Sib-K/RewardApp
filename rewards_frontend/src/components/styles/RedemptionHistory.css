@@ -1,0 +1,44 @@
+.history-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .history-error {
+    color: red;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .history-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .history-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .history-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .history-card h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .timestamp {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

@@ -1,0 +1,84 @@
+.rewards-panel {
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+}
+
+.balance-section {
+  margin-bottom: 30px;
+}
+
+.rewards-list {
+  margin-top: 20px;
+}
+
+.reward-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.reward-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reward-item:hover {
+  transform: scale(1.05);
+}
+
+.reward-info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.redeem-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.redeem-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.redeem-button:hover {
+  background-color: #218838;
+}
+
+.redeemed-message {
+  margin-top: 15px;
+  color: #28a745;
+  font-weight: bold;
+}
